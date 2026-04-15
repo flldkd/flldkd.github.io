@@ -195,6 +195,12 @@ a:focus-visible {
     line-height: 1.2;
 }
 
+.hero-alias {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+}
+
 .hero-tagline {
     font-size: 1.05rem;
     color: var(--muted);
@@ -203,11 +209,26 @@ a:focus-visible {
 }
 
 .hero-quote {
-    font-size: 0.95rem;
-    color: var(--muted);
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 600;
+    font-style: normal;
     margin-bottom: 1.25rem;
-    line-height: 1.55;
+    line-height: 1.65;
+    letter-spacing: 0.015em;
+}
+
+.hero-quote::before {
+    content: ">";
+    color: var(--accent);
+    font-size: 0.9rem;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .hero-info {
@@ -264,6 +285,26 @@ a:focus-visible {
     margin-bottom: 1.25rem;
     padding-bottom: 0.6rem;
     border-bottom: 2px solid var(--border);
+}
+
+.competition-group {
+    margin-bottom: 2rem;
+}
+
+.competition-group:last-child {
+    margin-bottom: 0;
+}
+
+.group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.competition-group .entry:last-of-type {
+    border-bottom: none;
 }
 
 /* ----- Entry ----- */
@@ -338,6 +379,20 @@ a:focus-visible {
 .entry-desc.placeholder {
     color: var(--muted);
     font-style: italic;
+}
+
+.entry-figure {
+    margin-top: 1rem;
+}
+
+.entry-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    background: var(--surface);
 }
 
 /* ----- Paper ----- */
