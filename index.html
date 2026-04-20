@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yu Lan | Academic Homepage</title>
-    <link rel="stylesheet" href="styles.css?v=20260415-2">
+    <link rel="stylesheet" href="styles.css?v=20260420-1">
 </head>
 <body>
     <nav class="site-nav">
@@ -12,8 +12,8 @@
             <a href="#home" class="nav-brand">于澜 · Yu Lan</a>
             <ul class="nav-links">
                 <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
                 <li><a href="#competitions" class="nav-link">Competitions</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
                 <li><a href="#scholarships" class="nav-link">Scholarships</a></li>
                 <li><a href="#social" class="nav-link">Activities</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -29,7 +29,6 @@
                 <div class="hero-text">
                     <h1 class="hero-name">于澜 &nbsp;<span style="font-size:1.2rem;font-weight:500;color:var(--muted);">Yu Lan</span></h1>
                     <p class="hero-alias">Nickname · 枫林路大砍刀</p>
-                    <p class="hero-tagline" id="typewriter">Security Researcher · Quantum Enthusiast · CTF Player</p>
                     <p class="hero-quote">“没有天赋，那就反复。”</p>
                     <dl class="hero-info">
                         <dt>Research</dt>
@@ -70,6 +69,78 @@
             </div>
         </section>
 
+        <!-- Competitions -->
+        <section id="competitions" class="block">
+            <h2 class="block-title">Competitions</h2>
+
+            <div class="competition-group">
+                <h3 class="group-title">Quantum Computing Competitions</h3>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">2025 CIC "悟空杯" Quantum Computing Competition</h3>
+                        <span class="entry-badge">National 2nd Prize</span>
+                    </div>
+                    <p class="entry-desc">Full score in the qualifying round theory exam. Finals project: quantum machine learning prototype on insurance cost regression data using PyVQNet / PyQPanda3 — quantum feature encoding, variational quantum circuits, and QLSTM structures.</p>
+                    <div class="entry-links">
+                        <a href="downloads/competition-quantum.html" class="btn">Download Competition Code</a>
+                    </div>
+                    <p class="entry-meta">May – Jun 2025 &nbsp;&nbsp;&nbsp; <span style="font-weight:bold;color:red;">National Second Prize</span></p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">2025 CCF 司南杯 Quantum Computing Competition</h3>
+                        <span class="entry-badge">National Excellence Award</span>
+                    </div>
+                    <p class="entry-desc">Full score in the qualifying round theory exam. Did not participate in the final due to scheduling conflict.</p>
+                    <p class="entry-meta">Feb – Jun 2025 &nbsp;&nbsp;&nbsp; <span style="font-weight:bold;color:red;">National Excellence Award (优胜奖)</span></p>
+                </div>
+            </div>
+
+            <div class="competition-group">
+                <h3 class="group-title">Information Security Competitions</h3>
+                <figure class="entry-figure">
+                    <img src="information-security-competitions.png" alt="Information security competitions and binary exploitation work" loading="lazy">
+                </figure>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">"Challenge Cup" 揭榜挂帅 — CTF / PWN Track</h3>
+                        <span class="entry-badge">National Special Prize / Champion</span>
+                    </div>
+                    <p class="entry-desc">Mainly responsible for the CTF PWN (binary exploitation) direction. Long-term CTF competitor; proficient in Linux binary exploitation, debugging, and scripted reproduction.</p>
+                    <p class="entry-meta">2024 – 2025 &nbsp;&nbsp;&nbsp; <span style="font-weight:bold;color:red;">National Special Prize · The Only Champion (全国第一名)</span></p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">National College Student Information Security Competition (作品赛)</h3>
+                        <span class="entry-badge">National 1st Prize</span>
+                    </div>
+                    <p class="entry-meta"><span style="font-weight:bold;color:red;">National First Prize</span></p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">全国大学生信息安全与技术对抗大赛 (CTF)</h3>
+                        <span class="entry-badge">National 2nd Prize</span>
+                    </div>
+                    <p class="entry-meta"><span style="font-weight:bold;color:red;">National Second Prize</span></p>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Various CTF Competitions &amp; Other Awards</h3>
+                    </div>
+                    <p class="entry-desc placeholder">软件系统安全赛 — Provincial 2nd Prize</p>
+                    <p class="entry-desc placeholder">全国大学生信息安全大赛 — Provincial 2nd Prize</p>
+                    <p class="entry-desc placeholder">长城杯 — Provincial 3rd Prize</p>
+                    <p class="entry-meta">CTF expertise: ROP, shellcode writing, format string attacks, stack exploitation, partial heap exploitation, partial IO exploitation</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Research & Projects -->
         <section id="research" class="block">
             <h2 class="block-title">Research &amp; Projects</h2>
@@ -96,6 +167,10 @@
                 <figure class="entry-figure">
                     <img src="ustc-learning-phase-notes.png" alt="USTC quantum talent training program study notes" loading="lazy">
                 </figure>
+                <div class="entry-links">
+                    <a href="downloads/ustc-book-notes.html" class="btn">Download Book Notes</a>
+                    <a href="downloads/project-notes.html" class="btn">Download Notes</a>
+                </div>
                 <p class="entry-meta">Jul – Sep 2025 &nbsp;&nbsp;&nbsp; Guided by Prof. Zhaofeng Su &amp; senior PhD members @ USTC</p>
             </div>
 
@@ -114,10 +189,38 @@
                 <p class="entry-desc">
                     <strong>Key findings:</strong> Dual-rail outperforms on logical |+⟩ and |1⟩ states; repetition is best for logical |0⟩ (encoded as |00⟩, no 1s). Results confirm theory: dual-rail benefits from balanced 0/1 occupation.
                 </p>
+                <figure class="entry-figure">
+                    <img src="dual-rail-comparison.png" alt="Simulation and real-device comparison for 2-bit dual-rail quantum error correction" loading="lazy">
+                </figure>
                 <p class="entry-desc">
                     <strong>Special note:</strong> Discovered an undocumented idle-gate time parameter in QPanda3 during internal testing of Wukong-180. Reverse-engineered the compiled <code>.pyd</code> file at the assembly level using decompilation techniques, confirmed the parameter as 1 µs in coordination with the official team.
                 </p>
+                <p class="entry-note">Note: As the research is not fully concluded yet, related resources are not public for now.</p>
                 <p class="entry-meta">Oct 2025 – Present &nbsp;&nbsp;&nbsp; Collaboration with Prof. Zhaofeng Su (USTC) &amp; PhD mentors</p>
+            </div>
+
+            <!-- Quantum protocol security -->
+            <div class="entry">
+                <div class="entry-head">
+                    <h3 class="entry-title">Quantum Protocol Security &amp; Quantum System Attack Modeling</h3>
+                    <span class="entry-badge entry-badge-active">Ongoing</span>
+                </div>
+                <p class="entry-desc">
+                    Bridging traditional CTF security with quantum computing. Reproduced and independently implemented attack scripts for all existing quantum security challenges on Hack The Box, covering BB84/QKD with untrusted nodes, quantum teleportation, phase encoding, quantum random number generation, and entanglement circuit construction.
+                </p>
+                <p class="entry-desc">
+                    <strong>Highlight — BB84 MitM attack:</strong> Simulated an intercept-and-resend attack where the adversary intercepts 2 photons per logical bit, measures in both X and Z bases, and recovers the shared key by exploiting publicly announced basis-match information.
+                </p>
+                <p class="entry-desc">
+                    Published three articles on Kanxue Security Community; all three rated as <strong>Featured Posts</strong> (优秀博客). Two posts were actively promoted by the Kanxue official WeChat account. Total readership: <span style="font-weight:bold;color:#0090ff;">28,000+</span> views.
+                </p>
+                <figure class="entry-figure">
+                    <img src="quantum-protocol-security.png" alt="Quantum protocol security debugging and attack analysis screenshots" loading="lazy">
+                </figure>
+                <div class="entry-links">
+                    <a href="downloads/htb-quantum.html" class="btn">Download HTB Quantum</a>
+                </div>
+                <p class="entry-meta">Sep 2025 – Present &nbsp;&nbsp;&nbsp; Independent research</p>
             </div>
 
             <!-- Multi-bit encoding -->
@@ -138,27 +241,9 @@
                 <figure class="entry-figure">
                     <img src="multi-bit-quantum-encoding.png" alt="Multi-bit quantum encoding circuits and comparison plots" loading="lazy">
                 </figure>
+                <p class="entry-note">Note: As the research is not fully concluded yet, related resources are not public for now.</p>
                 <p class="entry-meta">Oct 2025 – Feb 2026 &nbsp;&nbsp;&nbsp; Guided by Prof. Zhaofeng Su (USTC) &amp; PhD mentors</p>
             </div>
-
-            <!-- Quantum protocol security -->
-            <div class="entry">
-                <div class="entry-head">
-                    <h3 class="entry-title">Quantum Protocol Security &amp; Quantum System Attack Modeling</h3>
-                    <span class="entry-badge entry-badge-active">Ongoing</span>
-                </div>
-                <p class="entry-desc">
-                    Bridging traditional CTF security with quantum computing. Reproduced and independently implemented attack scripts for all existing quantum security challenges on Hack The Box, covering BB84/QKD with untrusted nodes, quantum teleportation, phase encoding, quantum random number generation, and entanglement circuit construction.
-                </p>
-                <p class="entry-desc">
-                    <strong>Highlight — BB84 MitM attack:</strong> Simulated an intercept-and-resend attack where the adversary intercepts 2 photons per logical bit, measures in both X and Z bases, and recovers the shared key by exploiting publicly announced basis-match information.
-                </p>
-                <p class="entry-desc">
-                    Published three articles on Kanxue Security Community; all three rated as <strong>Featured Posts</strong> (优秀博客). Two posts were actively promoted by the Kanxue official WeChat account. Total readership: <span style="font-weight:bold;color:#0090ff;">28,000+</span> views.
-                </p>
-                <p class="entry-meta">Sep 2025 – Present &nbsp;&nbsp;&nbsp; Independent research</p>
-            </div>
-
             <!-- Other small projects -->
             <div class="entry">
                 <div class="entry-head">
@@ -179,6 +264,9 @@
                 <figure class="entry-figure">
                     <img src="6d1061a31cd0d21033e63f4f6020f9c7.png" alt="Quantum independent project notes and diagrams" loading="lazy">
                 </figure>
+                <div class="entry-links">
+                    <a href="downloads/project-notes.html" class="btn">Download Notes</a>
+                </div>
             </div>
 
             <!-- LWE blockchain iris -->
@@ -194,75 +282,6 @@
                     <img src="lwe-iris-authentication-system.png" alt="LWE-encrypted iris authentication system architecture and demo screens" loading="lazy">
                 </figure>
                 <p class="entry-meta">Feb – Sep 2025 &nbsp;&nbsp;&nbsp; Guided by Prof. Qiang Wang @ NEU</p>
-            </div>
-        </section>
-
-        <!-- Competitions -->
-        <section id="competitions" class="block">
-            <h2 class="block-title">Competitions</h2>
-
-            <div class="competition-group">
-                <h3 class="group-title">Quantum Computing Competitions</h3>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">2025 CIC "悟空杯" Quantum Computing Competition</h3>
-                        <span class="entry-badge">National 2nd Prize</span>
-                    </div>
-                    <p class="entry-desc">Full score in the qualifying round theory exam. Finals project: quantum machine learning prototype on insurance cost regression data using PyVQNet / PyQPanda3 — quantum feature encoding, variational quantum circuits, and QLSTM structures.</p>
-                    <p class="entry-meta">May – Jun 2025 &nbsp;&nbsp;&nbsp; <span style="font-weight:bold;color:red;">National Second Prize</span></p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">2025 CCF 司南杯 Quantum Computing Competition</h3>
-                        <span class="entry-badge">National Excellence Award</span>
-                    </div>
-                    <p class="entry-desc">Full score in the qualifying round theory exam. Did not participate in the final due to scheduling conflict.</p>
-                    <p class="entry-meta">Feb – Jun 2025 &nbsp;&nbsp;&nbsp; <span style="font-weight:bold;color:red;">National Excellence Award (优胜奖)</span></p>
-                </div>
-            </div>
-
-            <div class="competition-group">
-                <h3 class="group-title">Information Security Competitions</h3>
-                <figure class="entry-figure">
-                    <img src="information-security-competitions.png" alt="Information security competitions and binary exploitation work" loading="lazy">
-                </figure>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">"Challenge Cup" 揭榜挂帅 — AI &amp; Security Track</h3>
-                        <span class="entry-badge">National Special Prize / Champion</span>
-                    </div>
-                    <p class="entry-desc">CTF PWN (binary exploitation) direction. Long-term CTF competitor; proficient in Linux binary exploitation, debugging, and scripted reproduction.</p>
-                    <p class="entry-meta">2024 – 2025 &nbsp;&nbsp;&nbsp; <span style="font-weight:bold;color:red;">National Special Prize · The Only Champion (全国第一名)</span></p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">National College Student Information Security Competition (作品赛)</h3>
-                        <span class="entry-badge">National 1st Prize</span>
-                    </div>
-                    <p class="entry-meta"><span style="font-weight:bold;color:red;">National First Prize</span></p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">全国大学生信息安全与技术对抗大赛</h3>
-                        <span class="entry-badge">National 2nd Prize</span>
-                    </div>
-                    <p class="entry-meta"><span style="font-weight:bold;color:red;">National Second Prize</span></p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">Various CTF Competitions &amp; Other Awards</h3>
-                    </div>
-                    <p class="entry-desc placeholder">软件系统安全赛 — Provincial 2nd Prize</p>
-                    <p class="entry-desc placeholder">全国大学生信息安全大赛 — Provincial 2nd Prize</p>
-                    <p class="entry-desc placeholder">长城杯 — Provincial 3rd Prize</p>
-                    <p class="entry-meta">CTF expertise: ROP, shellcode writing, format string attacks, stack exploitation, partial heap exploitation, partial IO exploitation</p>
-                </div>
             </div>
         </section>
 
@@ -290,9 +309,9 @@
         <section id="contact" class="block">
             <h2 class="block-title">Contact</h2>
             <div class="contact-grid">
-                <a href="mailto:17374459322@qq.com" class="contact-card">
+                <a href="mailto:20236720@stu.neu.edu.cn" class="contact-card">
                     <span class="contact-label">Email</span>
-                    <span class="contact-value">17374459322@qq.com</span>
+                    <span class="contact-value">20236720@stu.neu.edu.cn</span>
                 </a>
                 <a href="tel:+8613022207972" class="contact-card">
                     <span class="contact-label">Phone</span>
@@ -302,10 +321,6 @@
                     <span class="contact-label">Kanxue Blog</span>
                     <span class="contact-value">28,000+ views · 3 featured posts</span>
                 </a>
-                <div class="contact-card">
-                    <span class="contact-label">Institution</span>
-                    <span class="contact-value">NEU Software College · USTC Quantum Group</span>
-                </div>
             </div>
         </section>
     </main>
@@ -314,7 +329,7 @@
         <div class="footer-inner">
             <p>&copy; 2026 于澜 (Yu Lan). All rights reserved.</p>
             <div class="footer-links">
-                <a href="mailto:17374459322@qq.com" title="Email">Email</a>
+                <a href="mailto:20236720@stu.neu.edu.cn" title="Email">Email</a>
             </div>
         </div>
     </footer>

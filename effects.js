@@ -1,47 +1,6 @@
 // ============================================
-// Homepage effects: typewriter, theme, scroll
+// Homepage effects: theme, scroll
 // ============================================
-
-// Typewriter effect
-class TypeWriter {
-    constructor(element, texts, options = {}) {
-        this.element = element;
-        this.texts = texts;
-        this.textIndex = 0;
-        this.charIndex = 0;
-        this.isDeleting = false;
-        this.speed = options.speed || 100;
-        this.deleteSpeed = options.deleteSpeed || 50;
-        this.pauseTime = options.pauseTime || 2000;
-        
-        this.type();
-    }
-    
-    type() {
-        const currentText = this.texts[this.textIndex];
-        
-        if (this.isDeleting) {
-            this.element.textContent = currentText.substring(0, this.charIndex - 1);
-            this.charIndex--;
-            var typeSpeed = this.deleteSpeed;
-        } else {
-            this.element.textContent = currentText.substring(0, this.charIndex + 1);
-            this.charIndex++;
-            var typeSpeed = this.speed;
-        }
-        
-        if (!this.isDeleting && this.charIndex === currentText.length) {
-            typeSpeed = this.pauseTime;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.charIndex === 0) {
-            this.isDeleting = false;
-            this.textIndex = (this.textIndex + 1) % this.texts.length;
-            typeSpeed = 500;
-        }
-        
-        setTimeout(() => this.type(), typeSpeed);
-    }
-}
 
 // Matrix rain (legacy, unused)
 class MatrixRain {
@@ -234,21 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Typewriter
-    const typewriterElement = document.getElementById('typewriter');
-    if (typewriterElement) {
-        new TypeWriter(typewriterElement, [
-            'Researcher · Developer · Explorer',
-            'Student · Researcher · Innovator',
-            'Explore the Unknown · Create the Future',
-            'Hacker · Researcher · Creator'
-        ], {
-            speed: 100,
-            deleteSpeed: 50,
-            pauseTime: 2000
-        });
-    }
-    
     // Smooth scroll
     initSmoothScroll();
     

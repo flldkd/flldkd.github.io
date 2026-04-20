@@ -371,6 +371,24 @@ a:focus-visible {
     line-height: 1.55;
 }
 
+.entry-note {
+    margin-top: 0.9rem;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.84rem;
+    color: #c2410c;
+    background: #fff7ed;
+    border-left: 4px solid #f59e0b;
+    border-radius: var(--radius-sm);
+    font-style: italic;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .entry-note {
+    color: #fdba74;
+    background: rgba(249, 115, 22, 0.14);
+    border-left-color: #fb923c;
+}
+
 .entry-meta {
     font-size: 0.8rem;
     color: var(--muted);
@@ -397,6 +415,13 @@ a:focus-visible {
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-sm);
     background: var(--surface);
+}
+
+.entry-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
 }
 
 /* ----- Paper ----- */
@@ -459,21 +484,31 @@ a:focus-visible {
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.3rem 0.7rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--accent);
-    background: var(--accent-bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    transition: border-color var(--ease), background var(--ease), color var(--ease);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #9a3412;
+    background: linear-gradient(135deg, #fff7ed, #fdba74);
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(249, 115, 22, 0.16);
+    transition: border-color var(--ease), background var(--ease), color var(--ease), transform var(--ease), box-shadow var(--ease);
+}
+.btn::before {
+    content: "↓";
+    font-size: 0.9em;
+    line-height: 1;
 }
 .btn:hover {
     text-decoration: none;
-    border-color: var(--accent);
-    background: var(--accent);
-    color: var(--surface);
+    background: linear-gradient(135deg, #ffedd5, #fb923c);
+    color: #7c2d12;
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 12px 22px rgba(234, 88, 12, 0.2);
 }
 .btn:focus-visible {
     outline: 2px solid var(--accent);
