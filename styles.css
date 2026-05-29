@@ -208,29 +208,6 @@ a:focus-visible {
     min-height: 1.6em;
 }
 
-.hero-quote {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: fit-content;
-    max-width: 100%;
-    font-size: 1rem;
-    color: var(--text);
-    font-weight: 600;
-    font-style: normal;
-    margin-bottom: 1.25rem;
-    line-height: 1.65;
-    letter-spacing: 0.015em;
-}
-
-.hero-quote::before {
-    content: ">";
-    color: var(--accent);
-    font-size: 0.9rem;
-    line-height: 1;
-    flex-shrink: 0;
-}
-
 .hero-info {
     font-size: 0.9rem;
     display: grid;
@@ -247,13 +224,15 @@ a:focus-visible {
 
 .hero-photo-wrap {
     width: 100%;
-    max-width: 220px;
+    max-width: 165px;
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border);
     background: var(--surface);
     box-shadow: var(--shadow-sm);
     transition: border-color var(--ease), box-shadow var(--ease);
+    justify-self: end;
+    margin-top: 0.35rem;
 }
 .hero-photo-wrap:hover {
     border-color: var(--accent);
@@ -636,7 +615,8 @@ a:focus-visible {
         font-size: 1.75rem;
     }
     .hero-photo-wrap {
-        max-width: 180px;
+        max-width: 135px;
+        margin-top: 0;
     }
 
     .block {
